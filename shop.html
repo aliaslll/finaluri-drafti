@@ -6,7 +6,7 @@
    
     <link rel="stylesheet" href="shop.css">
     <title>Final</title>
-     <script src="script.js" defer></script>
+    
 </head>
 <body>
     
@@ -42,7 +42,7 @@
     <div class="nav-overlay" id="navOverlay"></div>
 </div>
     </div>
-</div>
+</div>    
 
 <section>
     <div class="box2">
@@ -56,13 +56,17 @@
             <h2 style=" font-weight: normal; font-size: 40px;  color: rgba(80, 50, 23, 1); font-family: 'poppins', sans-serif;">B12 Medicine</h2>
             <h4 style="font-weight: normal; font-size: 25px; color: rgba(143, 125, 106, 1);" >$19.00 USD  <span  style="width: 15px;">$25.00 USD</span></h4>
              <div class="button-section">
-            <button class="btn1"> 1 <img src="photos/icons/Vector (5).png" alt=""></button>
+          <div class="quantity-box">
+  <button class="down">−</button>
+  <input type="text" id="quantity" value="1" readonly>
+  <button class="up">+</button>
+</div>
       <button class="add-to-cart-btn"> 
                 <img src="photos/icons/Vector (1).png"   alt="button"   >
                 <p class="button-p" style="color: white;" >add to Cart</p>
             </button>
                 </div>
-                
+       
             <h5 style="color:  rgba(80, 50, 23, 1); font-weight: medium; font-family: 'poppins', sans-serif; font-size: 16px;">Product Description</h5>
             <p style="color: rgba(143, 125, 106, 1);">B12 Medicine is a premium supplement that combats B12 deficiency and supports energy,<br>
                  red blood cell formation, and nervous system health. Perfect for those with fatigue, <br>
@@ -107,7 +111,7 @@
     </div>
 
     <div class="row">
-        <img src="photos/icons/Vector (8).png" alt="">
+        <img src="photos/icons/Vector (9).png" alt="">
         <p>Fexible payment</p>
     </div>
 
@@ -289,6 +293,7 @@
 </section>
     
    
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-      overflow-x: hidden;
+    overflow-x: hidden;
     max-width: 100%;
 }
 
@@ -10,21 +10,22 @@ body {
     font-size: 14px;
     box-sizing: border-box;
     background-color: rgba(232, 230, 222, 1);
+    
 }
 
+.box1 {
+    width: 100%;
+}
 
 .header {
-display: flex;
+    display: flex;
     justify-content: space-between;
-  padding: 10px 20px;
-  padding-right: 15%;
-  
-  
-    
+    padding: 10px 20px;
+   padding-right: 15%;
+align-items: center;
     background-color: rgba(238, 237, 231, 1);
-    
-    
 } 
+
 .nav {
     display: flex;
     align-items: center;
@@ -51,6 +52,11 @@ display: flex;
 
 .nav-overlay.active {
     display: block;
+}
+
+.box2 {
+    margin-left: 15%;
+    
 }
 .text {
     margin-left: 17%;
@@ -96,11 +102,21 @@ justify-self: center;
 }
 .pills-row {
   display: flex;
-  flex-wrap: wrap;        /* allows pills to wrap on smaller screens */
-  justify-content: center; /* centers the row */
-  gap: 30px;              /* controls spacing between pills */
+  flex-wrap: nowrap;           /* keep in one row */
+  justify-content: space-between;
+  gap: 10px;
   margin-top: 50px;
   text-align: center;
+}
+
+.pill {
+  flex: 1 1 0;                 /* grow/shrink equally */
+  min-width: 100px;            /* prevents pills from becoming too small */
+  background-color: rgba(238, 237, 231, 1);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .pill h2 {
@@ -117,13 +133,6 @@ justify-self: center;
     
     line-height: 1.5;
 
-}
-.pill {
-  background-color: rgba(238, 237, 231, 1);
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-  
 }
 
 .paragraph-text h1 {
@@ -414,11 +423,14 @@ font-family: 'poppins', sans-serif;
   }
 
   .pills-row {
-    gap: 20px;
+    flex-wrap: wrap;          /* allows wrapping on smaller screens */
+    justify-content: center;  /* center the wrapped rows */
+    gap: 15px;                /* spacing between pills */
   }
 
   .pill {
-    width: 45%;
+    flex: 1 1 45%;            /* each pill takes ~45% of row */
+    min-width: auto;
   }
 
   .medicine {
@@ -442,7 +454,9 @@ font-family: 'poppins', sans-serif;
   }
 
   .client {
-    width: 45%;
+    width: 90%;
+    justify-items: center;
+    text-align: center;
     margin-bottom: 20px;
   }
 
@@ -476,9 +490,8 @@ font-family: 'poppins', sans-serif;
   .paragraph-text p {
     font-size: 16px;
   }
-
-  .pill {
-    width: 80%;
+.pill {
+    flex: 1 1 80%;            /* almost full width on tiny screens */
   }
 
   .pill h2 {
@@ -490,7 +503,7 @@ font-family: 'poppins', sans-serif;
   }
 
   .client {
-    width: 50%;
+    width: 70%;
     
     justify-items: center;
     text-align: center;

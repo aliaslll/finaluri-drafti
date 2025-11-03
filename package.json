@@ -1,0 +1,17 @@
+{
+  "name": "medifit",
+  "version": "1.0.0",
+  "description": "MediFit Pharmacy Website",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "dev": "live-server .",
+    "build": "echo 'Build complete'"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
